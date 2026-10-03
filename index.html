@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stefano C. Coronado | Cloud &amp; Platform Architect</title>
+<meta name="description" content="Stefano Coronado builds the cloud platforms, CI/CD pipelines and software factories that software teams ship on.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b120c;--fg:#7dff9b;--dim:#3fae5d;--hi:#ffb000;--mono:'VT323','Courier New',Courier,monospace}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;color:var(--fg);font:1.45rem/1.35 var(--mono);text-shadow:0 0 6px rgba(125,255,155,.45);
+background:radial-gradient(ellipse at center,#0f1c11 0%,var(--bg) 75%) fixed}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;
+background:repeating-linear-gradient(to bottom,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)}
+main{max-width:56rem;margin:0 auto;padding:clamp(1.5rem,5vw,3.5rem) 1.25rem 4rem}
+h1,h2,h3,p,ul{margin:0}
+h1{font-size:clamp(2.4rem,9vw,4.5rem);font-weight:400;line-height:1;color:var(--hi);text-shadow:0 0 10px rgba(255,176,0,.55)}
+.boot{color:var(--dim);margin-bottom:1.25rem}
+.role{font-size:1.7rem;margin:.6rem 0 1.5rem}
+.prompt{color:var(--hi);margin:2.5rem 0 .75rem}
+.prompt::before{content:"scoronado@website~$ ";color:var(--dim)}
+.cursor{display:inline-block;width:.6em;height:1em;background:var(--fg);vertical-align:-.12em;margin-left:.15em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.text{max-width:42rem}
+.text + .text{margin-top:1rem}
+.entry{border:1px solid var(--dim);padding:1rem 1.25rem;margin:1rem 0;box-shadow:0 0 8px rgba(63,174,93,.25)}
+.entry h3{font-size:1.6rem;font-weight:400;color:var(--hi)}
+.entry h3::before{content:"drwxr-xr-x  ";color:var(--dim);font-size:1.1rem}
+.entry p{margin-top:.4rem;max-width:42rem}
+a{color:var(--hi);text-decoration:underline;text-underline-offset:.2em}
+a:hover,a:focus-visible{background:var(--hi);color:var(--bg);text-shadow:none;outline:none}
+.links{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 2rem}
+.links li::before{content:"[ ";color:var(--dim)}
+.links li::after{content:" ]";color:var(--dim)}
+footer{margin-top:3rem;color:var(--dim)}
+@media (prefers-reduced-motion:reduce){.cursor{animation:none}}
+@media (max-width:40rem){body{font-size:1.3rem}.entry h3::before{display:block}}
+</style>
+</head>
+<body>
+<main>
+  <p class="boot">BSD UNIX 4.3 (tty01)<br>login: stefano<br>Last login: <span id="ll">today</span> on ttyp0<br>You have mail.</p>
+  <h1>Stefano C. Coronado</h1>
+  <p class="role">Cloud &amp; Platform Architect</p>
+
+  <p class="prompt">cat ~/.plan</p>
+  <p class="text">I build the platforms that software teams ship on. That means the cloud infrastructure, the CI/CD pipelines and the developer tooling that let a team write code and get it running without fighting the plumbing.</p>
+  <p class="text">I work mostly with Azure, Kubernetes and GitLab. I like the unglamorous parts that keep everything up: DNS, authentication, registries and build systems. I'm happiest when a team forgets the platform is there.</p>
+
+  <p class="prompt">ls -l ~/what-i-do</p>
+
+  <article class="entry">
+    <h3>software-factories/</h3>
+    <p>I stand up software factories and onboard teams onto them, so a new team starts with a working pipeline, hosting and tooling instead of a blank page.</p>
+  </article>
+
+  <article class="entry">
+    <h3>cloud-platforms/</h3>
+    <p>I design and run cloud-native services on Azure Kubernetes, from high-availability public-facing apps to the Atlassian tools teams use every day. I also handle the networking and identity side: private DNS, Microsoft Entra ID sign-in and hybrid routing between on-prem and cloud.</p>
+  </article>
+
+  <article class="entry">
+    <h3>ci-cd-and-source-control/</h3>
+    <p>I run GitLab for thousands of daily users, move teams off legacy source control and build the automated pipelines that test and package their software, including Windows builds. When a pipeline or a VM breaks, I help the team get unstuck.</p>
+  </article>
+
+  <article class="entry">
+    <h3>teaching-and-community/</h3>
+    <p>I like explaining how things work. I have led a Linux users group, organized a hackathon, helped build a Beowulf research cluster and tutored intro programming students.</p>
+  </article>
+
+  <p class="prompt">cat links.txt</p>
+  <ul class="links">
+    <li><a href="https://www.linkedin.com/in/scoronado12/">LinkedIn</a></li>
+    <li><a href="https://github.com/scoronado12">GitHub</a></li>
+  </ul>
+
+  <footer>
+    <p>$ fortune<br>"It's more fun to compute." - Ralf Hütter, Kraftwerk, 1981</p>
+    <p>(c) <span id="y">2026</span> Stefano C. Coronado</p>
+    <p class="prompt" style="margin-top:1.5rem"><span class="cursor" aria-hidden="true"></span></p>
+  </footer>
+</main>
+<script>var d=new Date();document.getElementById('y').textContent=d.getFullYear();document.getElementById('ll').textContent=d.toString().slice(0,10)+" "+d.toTimeString().slice(0,8)</script>
+</body>
+</html>
